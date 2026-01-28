@@ -2,7 +2,6 @@ import { ROLE, requireRole } from "../../../../lib/server/auth";
 import { createPostAction } from "../../../../../actions/posts";
 import PostForm from "../../../../../components/PostForm";
 
-import { redirect } from "next/navigation";
 
 
 export const metadata = {

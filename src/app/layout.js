@@ -3,7 +3,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
-import { Toaster } from "sonner";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +29,6 @@ export default function RootLayout({ children }) {
         >
           <Header />
           <main className="min-h-screen">{children}</main>
-          <Toaster richColors position="top-center" />
           <Footer/>
         </body>
       </html>

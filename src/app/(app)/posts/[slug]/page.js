@@ -177,7 +177,7 @@ export default async function PostPage({ params }) {
                   </label>
                   <button
                     type="submit"
-                    className="rounded-md bg-neutral-100 px-3 py-1.5 text-[11px] font-medium text-slate-800 hover:bg-slate-900"
+                    className="rounded-md bg-neutral-100 px-3 py-1.5 text-[11px] font-medium text-slate-800 hover:bg-slate-900 hover:text-white"
                   >
                     Publish / schedule
                   </button>

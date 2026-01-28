@@ -5,8 +5,6 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { createPostSchema } from "../lib/validation";
 import { useRouter } from "next/navigation";
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
 
 export default function PostForm({ onSubmit }) {
   const [serverErrors, setServerErrors] = useState(null);
