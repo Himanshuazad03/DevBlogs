@@ -21,20 +21,22 @@ export default function HeaderClient({ user }) {
 
   const NavLinks = () => (
     <>
-      <Link href="/all-posts" className="hover:text-slate-900">
-        All Posts
-      </Link>
-      <Link href="/my-posts" className="hover:text-slate-900">
-        My Posts
-      </Link>
-      <Link href="/posts/new" className="hover:text-slate-900">
-        Add Post
-      </Link>
-      {isAdmin && (
-        <Link href="/admin/user" className="hover:text-slate-900">
-          Dashboard
+      <SignedIn>
+        <Link href="/all-posts" className="hover:text-slate-900">
+          All Posts
         </Link>
-      )}
+        <Link href="/my-posts" className="hover:text-slate-900">
+          My Posts
+        </Link>
+        <Link href="/posts/new" className="hover:text-slate-900">
+          Add Post
+        </Link>
+        {isAdmin && (
+          <Link href="/admin/user" className="hover:text-slate-900">
+            Dashboard
+          </Link>
+        )}
+      </SignedIn>
     </>
   );
 
@@ -49,7 +51,7 @@ export default function HeaderClient({ user }) {
           BlogPlatform
         </Link>
         <div className="flex items-center gap-2 md:hidden">
-          <MobileNav user = {user} />
+          <MobileNav user={user} />
           <span className="text-sm text-slate-600 dark:text-slate-400">
             Menu
           </span>
@@ -89,7 +91,7 @@ export default function HeaderClient({ user }) {
 
           {/* Auth */}
           <SignedOut>
-            <SignInButton forceRedirectUrl="/dashboard">
+            <SignInButton forceRedirectUrl="/all-posts">
               <Button variant="outline" size="sm">
                 Log in
               </Button>

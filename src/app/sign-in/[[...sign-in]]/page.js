@@ -13,7 +13,7 @@ export default function SignInPage() {
                 "bg-white text-black hover:bg-neutral-200 focus:ring-2 focus:ring-offset-2 focus:ring-white",
             },
           }}
-          afterSignInUrl="/"
+          redirectUrl="/all-posts"
         />
       
     </main>
