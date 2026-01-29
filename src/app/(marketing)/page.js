@@ -165,7 +165,7 @@ export default function Home() {
             </p>
 
             <div className="flex justify-center gap-4">
-              <Link href="/posts">
+              <Link href="/all-posts">
                 <Button size="lg" variant="secondary" className="px-10">
                   Read articles
                 </Button>
