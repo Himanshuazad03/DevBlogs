@@ -48,7 +48,7 @@ export default function HeaderClient({ user }) {
           href="/"
           className="text-lg font-semibold tracking-tight hidden md:block"
         >
-          BlogPlatform
+          DevBlogs
         </Link>
         <div className="flex items-center gap-2 md:hidden">
           <MobileNav user={user} />

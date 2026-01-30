@@ -38,7 +38,6 @@ async function ensureUniqueSlug(title) {
 export async function createPostAction(rawData) {
   try {
     const user = await requireRole([ROLE.ADMIN, ROLE.AUTHOR]);
-    console.log(user)
   
     const parsed = createPostSchema.safeParse({
       ...rawData,
